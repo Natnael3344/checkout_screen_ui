@@ -253,9 +253,9 @@ class CheckoutPage extends StatelessWidget {
                 children: [
                   const Text('Charge Amount '),
                   Text(
-                    '\$$_priceString',
+                    '\$$_priceCents',
                     style: const TextStyle(
-                        color: Colors.green,
+                        color: Color.fromARGB(255,130,36,50),
                         fontSize: 24,
                         fontWeight: FontWeight.bold),
                   ),
