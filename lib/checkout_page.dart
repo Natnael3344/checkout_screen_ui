@@ -162,7 +162,7 @@ class CheckoutPage extends StatelessWidget {
 
     // convert the calculated total to a string
     final String _priceString =
-        (_priceCents.toDouble() / 100).toStringAsFixed(2);
+        (_priceCents.toDouble()).toStringAsFixed(2);
 
     // calculate the height of the expanded appbar based on the total number
     // of line items to display.
@@ -253,7 +253,7 @@ class CheckoutPage extends StatelessWidget {
                 children: [
                   const Text('Charge Amount '),
                   Text(
-                    '\$$_priceCents',
+                    '\₹$_priceCents',
                     style: const TextStyle(
                         color: Color.fromARGB(255,130,36,50),
                         fontSize: 24,
@@ -564,7 +564,7 @@ class _PriceListItem extends StatelessWidget {
                 Expanded(
                   flex: 1,
                   child: Text(
-                    '\$${priceItem.price}',
+                    '\₹${priceItem.price}',
                     textAlign: TextAlign.end,
                   ),
                 ),
