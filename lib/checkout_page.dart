@@ -158,7 +158,6 @@ class CheckoutPage extends StatelessWidget {
 
     // add the final price as a line item
     _priceItems.add(
-        PriceItem(name: 'Total', quantity: 1, totalPriceCents: _priceCents));
 
     // convert the calculated total to a string
     final String _priceString =
@@ -521,7 +520,7 @@ class PriceItem {
 
   /// getter for the price as string with no dollar sign included
   /// ex: returns => '12.99'
-  String get price => (totalPriceCents.toDouble() / 100.00).toStringAsFixed(2);
+  String get price => (totalPriceCents.toDouble()).toStringAsFixed(2);
 
   @override
   String toString() {
